@@ -227,6 +227,15 @@ local Input = Tab:CreateInput({
     end,
  })
 
+local Button = Tab:CreateButton({
+   Name = "Redeem Codes",
+   Callback = function()
+    for i,v in pairs({"100KLIKES", "60KLIKES", "30KLIKES", "10KLIKES", "5KLIKES", "RELEASE"}) do
+    game:GetService("ReplicatedStorage").Packages.Knit.Services.RedeemService.RF.RedeemCode:InvokeServer(v)
+    end
+   end,
+})
+
  -- Player Tab
 
 local Tab = Window:CreateTab("Player")
