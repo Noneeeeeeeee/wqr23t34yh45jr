@@ -347,35 +347,11 @@ local Button = Tab:CreateButton({
  })
 
 local Button = Tab:CreateButton({
-		Name = "Car dealership",
-		Callback = function()
-			
-local maker = loadstring(game:HttpGet("https://github.com/slf0Dev/my-ui-library-making-utility/raw/main/InstanceMaker.lua"))().Instance;
-
-
-writefile("Image.png", game:HttpGet("https://gaytwinks18.com/contents/videos_screenshots/1000/1652/400x225/8.jpg"))
-
-
-local ScreenGui = maker("ScreenGui",{
-    Parent = game.CoreGui;
-    Name = "ScreenGui";
-    ZIndexBehavior = Enum.ZIndexBehavior.Global
-})
-
-local ImageFrame = maker("ImageLabel",{
-    AnchorPoint = Vector2.new(0.5, 0.5);
-    Name = "FrameImage";
-    Position = UDim2.new(0.5, 0, 0.5,0);
-    Parent = ScreenGui;
-    Size = UDim2.new(1, 0, 1, 0);
-    BorderSizePixel = 0;
-    BackgroundColor3 = Color3.fromRGB(56, 56, 56);
-    BackgroundTransparency = 1;
-    Image = getsynasset("Image.png")
-})
-end,
-		})
-
+    Name = "Car dealership",
+    Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/slf0Dev/key-system/main/bluusgui"))()
+    end,
+ })
 -- Tips Tab
 
 local Tab = Window:CreateTab("Tips") 
