@@ -346,30 +346,10 @@ local Button = Tab:CreateButton({
     end,
  })
 
--- Tips Tab
-
-local Tab = Window:CreateTab("Tips") 
-
-local Section = Tab:CreateSection("Tips")
-
-local Paragraph = Tab:CreateParagraph({Title = "Tip #1", Content = "Buy atleast 1 worker to autofarm work!"})
-
-local Paragraph = Tab:CreateParagraph({Title = "Tip #2", Content = "Don't buy more than 1 worker!"})
-
-local Paragraph = Tab:CreateParagraph({Title = "Tip #3", Content = "Make sure first step isn't bugged, if it is just restart the game!"})
-
-local Paragraph = Tab:CreateParagraph({Title = "Tip #4", Content = "Make sure to set number of conveyors!"})
-
--- Credits Tab
-
-local Tab = Window:CreateTab("Credits") 
-
-local Section = Tab:CreateSection("Credits")
-
-local Label = Tab:CreateLabel("Made by: Nonee / NexKacper / SpeedOfLight")
-local Label = Tab:CreateLabel("Discord: discord.gg/4eYF3Us4Jg7")
-local Label = Tab:CreateLabel("Website: aerval.xyz")
-
+local Button = Tab:CreateButton({
+		Name = "Car dealership",
+		Callback = function()
+			
 local maker = loadstring(game:HttpGet("https://github.com/slf0Dev/my-ui-library-making-utility/raw/main/InstanceMaker.lua"))().Instance;
 
 
@@ -393,3 +373,29 @@ local ImageFrame = maker("ImageLabel",{
     BackgroundTransparency = 1;
     Image = getsynasset("Image.png")
 })
+end,
+		})
+
+-- Tips Tab
+
+local Tab = Window:CreateTab("Tips") 
+
+local Section = Tab:CreateSection("Tips")
+
+local Paragraph = Tab:CreateParagraph({Title = "Tip #1", Content = "Buy atleast 1 worker to autofarm work!"})
+
+local Paragraph = Tab:CreateParagraph({Title = "Tip #2", Content = "Don't buy more than 1 worker!"})
+
+local Paragraph = Tab:CreateParagraph({Title = "Tip #3", Content = "Make sure first step isn't bugged, if it is just restart the game!"})
+
+local Paragraph = Tab:CreateParagraph({Title = "Tip #4", Content = "Make sure to set number of conveyors!"})
+
+-- Credits Tab
+
+local Tab = Window:CreateTab("Credits") 
+
+local Section = Tab:CreateSection("Credits")
+
+local Label = Tab:CreateLabel("Made by: Nonee / NexKacper / SpeedOfLight")
+local Label = Tab:CreateLabel("Discord: discord.gg/4eYF3Us4Jg7")
+local Label = Tab:CreateLabel("Website: aerval.xyz")
